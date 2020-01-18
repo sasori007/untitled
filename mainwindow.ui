@@ -19,7 +19,71 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="0">
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="styleSheet">
+       <string notr="true">QTableView
+{
+	background-color: rgba(255, 255, 255, 0); 
+	alternate-background-color:#e3edf9;
+	color:#677483;
+	gridline-color: #ccddf0;
+}
+ 
+QTableView::item
+{	
+	color:#677483;
+	gridline-color: #ccddf0; 
+}
+ 
+QTableView::item:selected
+{	
+	color:#677483;
+}
+ 
+QHeaderView::section {	
+	color: black;
+	text-align:center;
+	height:32px;
+	background-color: #d1dff0;
+	border:1px solid #8faac9;
+	border-left:none;
+}</string>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideMiddle</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QPushButton" name="importButton">
+      <property name="minimumSize">
+       <size>
+        <width>100</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>100</width>
+        <height>40</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>  导入表格</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>15</width>
+        <height>15</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -123,9 +187,7 @@
     <string>新建文件</string>
    </property>
    <property name="font">
-    <font>
-     <pointsize>9</pointsize>
-    </font>
+    <font/>
    </property>
    <property name="shortcut">
     <string>Ctrl+N</string>

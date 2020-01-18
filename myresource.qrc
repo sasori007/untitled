@@ -11,5 +11,9 @@
         <file>images/新建 .png</file>
         <file>images/官方版本.png</file>
         <file>images/关闭.png</file>
+        <file>images/icon_添加.png</file>
+    </qresource>
+    <qresource prefix="/home">
+        <file>images/导入.png</file>
     </qresource>
 </RCC>
